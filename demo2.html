@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f {
+            margin: 100px auto;
+            width: 790px;
+            height: 295px;
+            overflow: hidden;
+        }
+
+        .z {
+            position: relative;
+            width: 790px;
+            height: 295px;
+            animation: slide 8s linear infinite;
+        }
+
+        img {
+            position: absolute;
+            width: 790px;
+            height: 295px;
+            display: inline-block;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translate(0);
+            }
+
+            20% {
+                transform: translate(0);
+            }
+
+            25% {
+                transform: translate(-790px);
+            }
+
+            45% {
+                transform: translate(-790px);
+            }
+
+            50% {
+                transform: translate(-1580px);
+            }
+
+            70% {
+                transform: translate(-1580px);
+            }
+
+            75% {
+                transform: translate(-2370px);
+            }
+
+            95% {
+                transform: translate(-2370px);
+            }
+
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="f">
+        <div class="z">
+            <img src="imges/slide1a.jpeg" style="left: 0;">
+            <img src="imges/slidea2.jpeg" style="left: 790px;">
+            <img src="imges/slide3a.jpeg" style="left: 1580px;">
+            <img src="imges/slide4a.jpeg" style="left: 2370px;">
+        </div>
+    </div>
+</body>
+
+</html>
